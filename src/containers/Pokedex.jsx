@@ -2,6 +2,7 @@
 import axios from 'axios'; // Add this import
 import React, { useEffect, useState } from 'react';
 import { IMAGE_API_URL, POKEMON_API_URL } from '../components/config';
+import PokeballImage from './pokebg.png';
 import './pokedex.css';
 import { Link } from 'react-router-dom';
 import AppNavigator from '../components/AppNavigator';
@@ -41,7 +42,7 @@ export default function Pokedex() {
   };
 
   return (
-    <div>
+    <div style={{ backgroundImage: `url(${PokeballImage})` }}>
       <AppNavigator pokemonData={pokemonData} onSearch={handleSearch} />
       <div className="pokemon-grid">
         {filteredPokemonData.map((pokemon) => (
