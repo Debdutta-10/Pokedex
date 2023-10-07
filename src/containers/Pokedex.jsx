@@ -3,7 +3,6 @@ import axios from 'axios'; // Add this import
 import React, { useEffect, useState } from 'react';
 import { IMAGE_API_URL, POKEMON_API_URL } from '../components/config';
 import './pokedex.css';
-import PokemonDetails from './PokemonDetails';
 import { Link } from 'react-router-dom';
 import AppNavigator from '../components/AppNavigator';
 

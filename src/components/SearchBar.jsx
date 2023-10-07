@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './searchBar.css'; 
+import './searchbar.css'; 
 
 export default function SearchBar({ onSearch }) {
   const [searchQuery, setSearchQuery] = useState('');
