@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+h2 {
+  color: white;
+}
+
+/* Media Query for 720px screens */
+@media (max-width: 720px) {
+  .app-nav {
+    text-align: center;
+  }
+
+  .app-nav h2 {
+    margin-top: 10px; /* Add some space between logo and search bar */
+  }
+}
+
+/* Media Query for 1180px screens */
+@media (min-width: 721px) and (max-width: 1180px) {
+  .app-nav {
+    flex-direction: row; /* Return to horizontal layout */
+  }
+
+  .app-nav h2 {
+    margin-right: 20px; /* Add space between logo and search bar */
+  }
+}

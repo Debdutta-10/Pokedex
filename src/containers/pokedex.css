@@ -1,0 +1,70 @@
+body{
+  background-image: url('../pokebg.png');
+}
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.pokemon-card {
+  width: 200px;
+  height: 200px;
+  opacity: 0.8;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.pokemon-card p{
+  font-weight: 700 !important;
+  font-size: 1.2rem;
+  align-items: center;
+}
+.pokemon-card:hover {
+  cursor: pointer;
+  background: #B8B8B8;
+  opacity: 0.7;
+  transform: scale(1.05);
+
+}
+
+/* In your CSS file, add this style to remove underlines and change the color */
+.link-style {
+  text-decoration: none;
+  /* Remove underline */
+  color: inherit;
+  /* Use the default text color */
+}
+
+.link-style:hover {
+  text-decoration: none;
+  /* Remove underline on hover */
+  color: inherit;
+  /* Use the default text color on hover */
+}
+
+/* Media Query for 720px screens */
+@media (max-width: 720px) {
+  .pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 1 column with flexible width */
+    justify-items: center; /* Center the grid items horizontally */
+    align-items: center; /* Center the grid items vertically */
+    gap: 10px;
+  }  
+}
+
+/* Media Query for 1180px screens */
+@media (min-width: 721px) and (max-width: 1180px) {
+  .pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 1 column with flexible width */
+    justify-items: center; /* Center the grid items horizontally */
+    align-items: center; /* Center the grid items vertically */
+    gap: 10px;
+  }
+}

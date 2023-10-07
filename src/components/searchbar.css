@@ -1,0 +1,18 @@
+/* SearchBar.css */
+
+.search-bar {
+    width: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    display: flex;
+    align-items: center; /* Vertically align the input within the container */
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .search-input {
+    border: none; /* Remove borders */
+    padding: 10px; /* Add padding to the input */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    background:#DCDCDC;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
